@@ -4,7 +4,7 @@ const { defineConfig } = require("cypress");
 module.exports = defineConfig({
   
   e2e: {
-  
+    defaultCommandTimeout:4000,
     baseUrl: 'https://demoqa.com',
     // baseUrl: 'https://example.cypress.io'
     setupNodeEvents(on, config) {
